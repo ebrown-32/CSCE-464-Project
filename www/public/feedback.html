@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogs: The Basset Hound - Feedback</title>
+    <title>Feedback for Theo</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/feedback.css">
 </head>
 <body>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <h2 class="site-title">🐾 Theo The Basset</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <header>
-            <h1>Basset Hound Feedback</h1>
-            <p>We'd love to hear your thoughts about our Basset Hound website!</p>
+            <h1>Feedback</h1>
+            <p>We'd love to hear your thoughts about Theo and his portfolio website!</p>
         </header>
         
         <div class="feedback-container">
             <h2>Leave Your Feedback</h2>
             <form id="feedbackForm">
                 <div>
-                    <label for="feedbackText">Your Message:</label>
-                    <textarea id="feedbackText" placeholder="Please share your thoughts about our website..."></textarea>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Your name">
                 </div>
                 
                 <div>
-                    <label>Rate Our Website:</label>
+                    <label for="feedbackText">Your Message to Theo:</label>
+                    <textarea id="feedbackText" placeholder="Share your thoughts or a message for Theo..."></textarea>
+                </div>
+                
+                <div>
+                    <label>Rate Theo's Charm:</label>
                     <div class="star-rating">
                         <span class="star" data-rating="1">★</span>
                         <span class="star" data-rating="2">★</span>
@@ -36,12 +52,11 @@
                 <button type="submit" class="submit-btn">Submit Feedback</button>
             </form>
         </div>
-        
-        <div class="nav-container">
-            <a href="index.html" class="nav-link">Back to Home</a>
-            <a href="gallery.html" class="nav-link">Basset Hound Photo Gallery</a>
-        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Theo's Website</p>
+    </footer>
 
     <script src="assets/js/feedback.js"></script>
 </body>

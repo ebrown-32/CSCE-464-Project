@@ -22,20 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
         feedbackForm.addEventListener('submit', function(event) {
             event.preventDefault();
             
+            const name = document.getElementById('name').value;
             const feedbackText = document.getElementById('feedbackText').value;
             const wordCount = feedbackText.trim().split(/\s+/).length;
             
+            if (name.trim() === '') {
+                alert('Please enter your name before submitting.');
+                return;
+            }
+            
             if (feedbackText.trim() === '') {
-                alert('Please enter your feedback before submitting.');
+                alert('Please enter your message for Theo before submitting.');
                 return;
             }
             
             if (selectedRating === 0) {
-                alert('Please select a rating before submitting.');
+                alert('Please rate Theo\'s cuteness before submitting.');
                 return;
             }
             
-            alert(`Thank you for your ${wordCount} word feedback!`);
+            alert(`Thank you, ${name}! Theo appreciates your ${wordCount} word message and your ${selectedRating}-star rating!`);
             
             this.reset();
             stars.forEach(s => s.classList.remove('active'));
