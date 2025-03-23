@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #8b5e3c;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #8b5e3c;
+    padding: 8px;
+    text-align: left;
+}
+
+a {
+    color: #8b5e3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    flex: 1 0 300px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #8b5e3c;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #6d4a2e;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .content-section {
+        flex: 1 0 45%;
+    }
+    
+    img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    .gallery img {
+        flex: 1 0 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p, li {
+        font-size: 14px;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
